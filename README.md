@@ -1,7 +1,7 @@
-# LCTech Cherrypi Allwinner V3s Buildroot Config
+# LCTech CherryPi Allwinner V3s Buildroot Config
 
 ## Brief description
-This is an external configuration for building a minimal Linux for the [LCTech Cherrypi](https://linux-sunxi.org/CherryPi_PC_V3S) based on the Allwinner V3s SoC.
+This is an external configuration for building a minimal Linux for the [LCTech CherryPi](https://linux-sunxi.org/CherryPi_PC_V3S) based on the Allwinner V3s SoC.
 
 So far it boots into the shell and outputs the logs of U-Boot and Linux to a LCD connected via the 40-pin connector.\
 The LCD is enabled and initialized in U-Boot and the simple-framebuffer is then handed over to Linux.\
