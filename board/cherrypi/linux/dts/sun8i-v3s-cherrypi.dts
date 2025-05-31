@@ -76,6 +76,14 @@
 };
 
 &usbphy {
-	usb0_id_det-gpios = <&pio 5 6 GPIO_ACTIVE_HIGH>;
+	usb0_id_det-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>;
 	status = "okay";
+};
+
+&ehci {
+    status = "okay";
+};
+
+&ohci {
+    status = "okay";
 };
