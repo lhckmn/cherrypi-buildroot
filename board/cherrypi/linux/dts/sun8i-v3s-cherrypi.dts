@@ -55,6 +55,14 @@
 	chosen {
 		stdout-path = "serial0:115200n8";
 	};
+
+	leds {
+		pb4_ESP_CE {
+			label = "ESP_CE";
+			gpios = <&pio 1 4 GPIO_ACTIVE_LOW>; /* PB4 */
+			default-state = "off";
+		};
+	};
 };
 
 &mmc0 {
@@ -62,6 +70,21 @@
 	bus-width = <4>;
 	vmmc-supply = <&reg_vcc3v3>;
 	status = "okay";
+};
+
+&mmc1 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	broken-cd;
+	bus-width = <4>;
+	vmmc-supply = <&reg_vcc3v3>;
+	status = "okay";
+
+	esp8089: sdio_wifi@1 {
+		compatible = "esp,esp8089";
+		reg = <1>;
+		esp,crystal-26M-en = <1>;
+	};
 };
 
 &uart0 {

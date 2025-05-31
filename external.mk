@@ -1,0 +1,1 @@
+include $(sort $(wildcard $(BR2_EXTERNAL_CHERRY_PI_PATH)/package/*/*.mk))

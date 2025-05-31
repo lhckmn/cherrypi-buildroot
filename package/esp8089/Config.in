@@ -1,0 +1,5 @@
+config BR2_PACKAGE_ESP8089
+    bool "ESP8089 WiFi driver (al177 fork)"
+    depends on BR2_LINUX_KERNEL
+    help
+      Kernel module for the ESP8089 WiFi chip via SDIO.
