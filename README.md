@@ -1,4 +1,5 @@
-# Old archived version! See new repo with containerized setup: ![v3s_cherrypi_builroot](https://github.com/lhckmn/v3s_cherrypi_builroot)
+# Old archived version!
+See new repo with containerized setup: ![v3s_cherrypi_builroot](https://github.com/lhckmn/v3s_cherrypi_builroot)
 
 
 # LCTech CherryPi Allwinner V3s Buildroot Config
